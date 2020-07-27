@@ -1,0 +1,296 @@
+{{css "main/css/homeSlider.css"}}
+<div class="guide_pic">
+  <div class="guide_pic_shadow"></div>
+  <img class="guide_pic_img" src="main/img/assets/top_img_01.jpg">
+  <div class="guide_pic_content">
+    <h1 class="guide_pic_h1">梅沙教育,专业的青少年营地教育平台
+    </h1>
+    <div class="guide_pic_h2">致力于打造专业的体验式教育营地，为 3 到 18 岁的青少年提供优质的教育服务。</div>
+    <div class="button_app_wrapper">
+      <div class="button_app">下载梅沙教育APP</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ms_campedu">
+  <div class="home_title">- 梅沙营地教育 -</div>
+  <div class="home_vice_title">万科旗下教育品牌，领先的素质教育内容提供商</div>
+  <div>
+    <div class="ms_campedu_items_wrapper">
+      <ul class="ms_campedu_items">
+        <li><a href="/about#course-part"><div class="meisha_campedu_icon meisha_campedu_icon_fst"></div></a></li>
+        <li class="ms_campedu_items_title"><a href="/about#course-part">四大课程板块</a></li>
+        <li class="ms_campedu_items_content"><a href="/about#course-part">涵盖“水上、雪地、山地、综合”四大板块的全方位优质课程体系</a></li>
+      </ul>
+      <ul class="ms_campedu_items">
+        <li><a href="/about#seven-campus"><div class="meisha_campedu_icon meisha_campedu_icon_sec"></div></a></li>
+        <li class="ms_campedu_items_title"><a href="/about#seven-campus">七大校区</a></li>
+        <li class="ms_campedu_items_content"><a href="/about#seven-campus">现已建立惠州、三亚、厦门、宁波、吉林、清远、深圳七大校区</a></li>
+      </ul>
+      <ul class="ms_campedu_items">
+        <li><a href="/about#course-team"><div class="meisha_campedu_icon meisha_campedu_icon_thd"></div></a></li>
+        <li class="ms_campedu_items_title"><a href="/about#course-team">专业课程团队</a></li>
+        <li class="ms_campedu_items_content"><a href="/about#course-team">四大营地教育团队：万航帆艇、营火虫教育、万有引力潜水、锐乐教育</a></li>
+      </ul>
+      <ul class="ms_campedu_items_last">
+        <li><a href="/about#report"><div class="meisha_campedu_icon meisha_campedu_icon_for"></div></a></li>
+        <li class="ms_campedu_items_title"><a href="/about#report">学员成长记录</a></li>
+        <li class="ms_campedu_items_content"><a href="/about#report">储备学生基础信息，记录营地学员的成长变化，为学员提供定制化学习建议</a></li>
+      </ul>
+    </div>
+
+    <div class="button_ref_wrapper">
+      <a href="/about"><div class="button_ref">了解更多</div></a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="guide_pic mslinian" style="">
+  <img class="guide_pic_img" src="main/img/image_video_meishalinian@2x.jpg">
+  <div class="linian_pic_content">
+
+    <div class="mslinian_title">梅沙营地教育理念</div>
+
+    <div class="video_watch_wrapper" style="">
+      <div class="button_app_1 video_watch"><div class="video_watch_content">观看视频</div></div>
+    </div>
+    <video class=" video_item" controls="controls" src="{{picPrefix}}camps/operation/video/74f6d50a02a5e5d3.mp4">
+    </video>  
+  </div>
+</div>
+
+
+<div class="grey_wrapper">
+  <div class="popular_camp_wrapper">
+    <div class="home_title">- 热门营团 -</div>
+    <div class="home_vice_title">为你的孩子挑选最用心的营地课程</div>
+    <ul class="popular_camp_items">
+      {{#each recommandCampList}}
+        <a class="popular_camp_item_a" href="/course_detail?id={{this.id}}"><li class="popular_camp_item_wrapper">
+          <ul class="popular_camp_item">
+            <li><img class="popular_camp_item_img" src="{{picPrefix}}{{this.cover}}" width="382px" height="252px"></li>
+            <li>
+              <ul class="camp_item_content_wrapper">
+                <li class="camp_item_title">{{this.name}}</li>
+                <li class="camp_item_info_1">{{this.intro}} · {{this.city}}</li>
+                <li class="camp_item_info_2"><span class="camp_item_info_2_content">{{this.slogan}}</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        </a>
+      {{/each}}
+
+    </ul>
+    <div id="more_camp" class="button_ref_wrapper">
+      <a href="/courses"><div class="button_ref">更多营团</div></a>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="pic_wall_wrapper" style="">
+  <div id="pic_wall_title" class="home_title">- 营地照片墙 -</div>
+  <div class="home_vice_title">看看孩子们在营地的飒爽风姿</div>
+  <div class="pic_wall_content_wrapper">
+    <ul class="pic_wall_content_container">
+      <li class="pic_wall_row_wrapper">
+        <ul class="pic_wall_row">
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_1">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[0].cover}}{{m_fill 380 240}}" width="100%" height="100%">
+
+          </li></a>
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_2">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[1].cover}}{{m_fill 380 380}}" width="100%" height="100%">
+
+          </li></a>
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_3">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[2].cover}}{{m_fill 380 560}}" width="100%" height="100%">
+
+          </li></a>
+        </ul>
+        <ul class="pic_wall_row">
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_2">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[3].cover}}{{m_fill 380 380}}" width="100%" height="100%">
+
+          </li></a>
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_3">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[4].cover}}{{m_fill 380 560}}" width="100%" height="100%">
+
+          </li></a>
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_1">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[5].cover}}{{m_fill 380 240}}" width="100%" height="100%">
+
+          </li></a>
+        </ul>
+        <ul class="pic_wall_row">
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_3">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[6].cover}}{{m_fill 380 560}}" width="100%" height="100%">
+
+          </li></a>
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_1">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[7].cover}}{{m_fill 380 240}}" width="100%" height="100%">
+
+          </li></a>
+          <a href="/pictures_wall"><li class="pic_wall_row_item pic_wall_row_item_2">
+            <img class="pic_item" src="{{picPrefix}}{{picList.[8].cover}}{{m_fill 380 380}}" width="100%" height="100%">
+
+          </li></a>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="button_ref_wrapper">
+    <a href="/pictures_wall"><div class="button_ref" style="">更多照片</div></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="slider1">
+    <div class="child" style="float:left;position:relative;font-size:0">
+      {{#each videoList}}
+        <div class="pic">
+          <img class="pic_img" src="{{picPrefix}}{{this.screenshot}}{{m_fill 452 806}}">
+          <div class="pic_img_shadow"></div>
+          <div class="slider1_content_wrapper">
+            <div class="slider1_content">
+              <a href="/video_detail?id={{this.id}}"><div class="slider1_content_1">{{this.name}}</div></a>
+              <div class="slider1_content_2">
+                {{getFstLabelSprit this.label}}{{this.duration}}
+              </div>
+            </div>
+            <div class="watch_video">观看视频
+              <img class="watch_video_play" src="main/img/home_icon_play_white.png">
+            </div>
+          </div>
+          <video class="video_item" controls="controls" src="{{videoPrefix}}{{this.path}}">
+          </video>  
+        </div>
+      {{/each}}
+      <a href="/selected_videos"><div class="formore_pic" style="">
+        <img class="formore_pic_img" src="main/img/assets/image_picturewall_06.png">
+        
+        <div class="morepic_shadow" style="text-align:center">
+          <div class="morepic_wrap">
+            <p class="more_video">更多视频</p>
+            <img src="main/img/assets/home_icon_next_white.png">
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="prev"></div>
+    <div class="next"></div>
+</div>
+
+
+
+
+
+
+
+<div class="grey_wrapper">
+
+  <div class="story_wrapper" style="">
+    <div class="home_title_story">- 孩子们和梅沙的故事 -</div>
+    <div class="home_vice_title">亲爱的孩子，愿这段时光给你温柔的力量</div>
+
+    <div class="story_item_wrapper">
+      <div class="story_item_fst_wrapper">
+        <div class="story_item_fst_left">
+          <a href="article_detail?id={{storyList.[0].id}}&&prep={{storyId}}"><img class="story_img_1" src="{{picPrefix}}{{storyList.[0].cover}}{{m_fill 435 680}}"></a>
+        </div>
+        <div class="story_item_fst_right">
+          <div class="story_item_fst_right_wrapper">
+            <a href="article_detail?id={{storyList.[0].id}}&&prep={{storyId}}"><div class="story_title">{{storyList.[0].title}}</div></a>
+            <div class="story_vice_title">
+              <span class="editor">梅沙教育</span><span class="read_count"> · {{storyList.[0].readNum}}次阅读</span>
+            </div>
+            <a href="article_detail?id={{storyList.[0].id}}&&prep={{storyId}}"><div class="story_content">{{storyList.[0].shortDesc}}</div></a>
+            <a href="article_detail?id={{storyList.[0].id}}&&prep={{storyId}}"><div class="story_detail">查看更多</div></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="story_item_sec_wrapper">
+        <div class="story_item_sec_left">
+          <div class="story_item_sec_left_wrapper">
+            <a href="article_detail?id={{storyList.[1].id}}&&prep={{storyId}}"><div class="story_title">{{storyList.[1].title}}</div></a>
+            <div class="story_vice_title">
+              <span class="editor">梅沙教育</span><span class="read_count"> · {{storyList.[1].readNum}}次阅读</span>
+            </div>
+            <a href="article_detail?id={{storyList.[1].id}}&&prep={{storyId}}"><div class="story_content">{{storyList.[1].shortDesc}}</div></a>
+            <a href="article_detail?id={{storyList.[1].id}}&&prep={{storyId}}"><div class="story_detail">查看更多</div></a>
+          </div>
+        </div>
+        <div class="story_item_sec_right">
+          <a href="article_detail?id={{storyList.[1].id}}&&prep={{storyId}}"><img class="story_img_2" src="{{picPrefix}}{{storyList.[1].cover}}{{m_fill 435 680}}"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="button_ref_wrapper">
+      <a href="/outdoor_articles?id={{storyId}}"><div class="button_ref" style="">更多故事</div></a>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="wrapper">
+  <div class="camp_selected_wrapper">
+    <div class="home_title_selectedcamp">- 营团推荐 -</div>
+    <div id="vice_title_selectedcamp" class="home_vice_title">为你推荐梅沙教育最优质的营地课程</div>
+    <div class="camp_items_wrapper_1">
+      {{#each camps}}
+        <a href="course_detail?id={{this.id}}">
+          <div class="camp_item_wrapper">
+            <div class="camp_item_img_wrapper">
+              <img class="camp_item_img" src="{{picPrefix}}{{this.cover}}">
+            </div>
+            <div class="camp_info_wrapper">
+              <div class="camp_info">
+                <div class="camp_info_title"><span class="camp_name">{{this.timeTypeName}}｜{{this.name}}</span></div>
+                <div class="camp_info_time">{{this.intro}} · {{this.city}}</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div id="bottom_pic" class="guide_pic">
+  <div class="guide_pic_shadow_none"></div>
+  <img class="guide_pic_img" src="main/img/assets/image_bottom.png">
+  <div class="bottom_pic_content">
+    <div class="bottom_pic_title">孩子的可能，超乎你的想象</div>
+    <div class="bottom_app_wrapper">
+      <div class="bottom_app">下载APP</div>
+    </div>
+  </div>
+</div>
+<script src="main/js/slider-home.js"></script> 
+<script type="text/javascript">
+(function() {
+  Slider.init({
+    target: $('.slider1'),
+    time: 5000
+  });
+})();
+</script>

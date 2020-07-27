@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="description" content="description">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="main/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="main/img/favicon.ico">
+
+  {{#each metaList}}
+    <meta name="{{this.referrer}}" content="{{this.time}}">
+  {{/each}}
+  <meta name="keywords" content="{{keywords}}">
+  <title>
+  {{#if this.isPC}}
+    {{title}}
+  {{else}}
+    title
+  {{/if}}
+  </title>
+  
+  <link rel="stylesheet" type="text/css" href="main/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="main/css/home.css">
+  <link rel="stylesheet" type="text/css" href="main/css/reset.css">
+  <script src="static/jquery-3.2.1.js"></script>
+  <script src="static/handlebars-v4.0.12.js"></script>
+  <script type="text/javascript">window.API_URL = '{{ API_URL }}'.replace('http:', 'https:')</script>
+  {{#each cssList}}
+  <link rel="stylesheet" href="{{this}}" media="screen" title="no title" charset="utf-8">
+  {{/each}}
+
+  {{#each jsList}}
+    <script src="{{this}}" charset="utf-8"></script>
+  {{/each}}
+</head>
+
+<body>
+  {{#if this.isPC}}
+  <header>header</header>
+  <div class="entity" style="">
+    {{{body}}}
+  </div>
+  <footer>footer</footer>
+  {{else}}
+  <div class="w-full">
+    {{{body}}}
+  </div>
+  {{/if}}
+
+  <script src="main/js/index.js"></script>
+
+</body>
+</html>
+
